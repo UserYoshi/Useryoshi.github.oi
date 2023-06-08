@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+body {
+    background-image: url('https://images2.alphacoders.com/564/564835.jpg');
+    animation: animateBackground 60s linear infinite;
+    color: #fff;
+}
+@keyframes animateBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+

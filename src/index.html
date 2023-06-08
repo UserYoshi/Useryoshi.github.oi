@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nursery</title>
+
+
+  
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- BOOSTRAP CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <!-- Toastify CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="/FinalProjectFirestore/assets/css/styles.css">
+
+  <style type="text/css">
+.nav__logo {
+  background-color: #123412;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+}
+.nav-link {
+  background-color: #123412;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #123412;">
+    <div class="container">
+      <a href="/FinalProjectFirestore/index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"  ></i> NURSERY
+                </a>
+ 
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signinModal" color="#fff">Signin</a>
+          <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" color="#fff">Signup</a>
+          <a class="nav-link logged-in" href="#" id="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Singin Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <div class="modal-content">
+            <div class="modal-header">
+          <h3>Registrarse</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <form id="signup-form">
+
+            <label for="email">Email:</label>
+            <input type="text" id="signup-email" class="form-control mb-3" placeholder="Title" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="signup-password" class="form-control mb-3" placeholder="Password" required>
+
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!--Singin Modal -->
+  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignin"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Ingresar</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+          <form id="login-form">
+            <label for="email">Email</label>
+            <input type="text" id="login-email" class="form-control mb-3" placeholder="Title" required>
+            <label for="password">Password:</label>
+            <input type="password" id="login-password" class="form-control mb-3" placeholder="Password" required>
+
+            <button type="submit" id="btnlogin" class="btn btn-success w-100 mb-4">Login</button>
+
+            <button type="button" class="btn btn-info" id="googleLogin">Google</button>
+            <button type="button" class="btn btn-primary" id="facebookLogin">Facebook</button>
+            <button type="button" class="btn btn-dark" id="githubLogin">Github</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Toastify js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./main.js" type="module"></script>
+</body>
+
+</html>
